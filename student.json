@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "name": "范德祥",
+        "age": "18",
+        "sex": "0",
+        "email": "322332@qq.com",
+        "class": "6-1",
+        "address": "福州",
+        "score": "0"
+    },
+    {
+        "id": "2",
+        "name": "范德祥",
+        "age": "18",
+        "sex": "1",
+        "email": "322332@qq.com",
+        "class": "6-1",
+        "address": "福州",
+        "score": "0"
+    },
+    {
+        "id": "3",
+        "name": "范德祥",
+        "age": "18",
+        "sex": "0",
+        "email": "322332@qq.com",
+        "class": "6-1",
+        "address": "福州",
+        "score": "0"
+    }
+]

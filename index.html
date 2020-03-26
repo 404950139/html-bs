@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./libs/layui-v2.5.6/layui/css/layui.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+      <div class="layui-header">
+        <div class="layui-logo">智慧孩童</div>
+        <ul class="layui-nav layui-layout-right">
+          <li class="layui-nav-item">
+            <a href="javascript:;">
+              <img src="http://t.cn/RCzsdCq" class="layui-nav-img" />
+              贤心
+            </a>
+            <dl class="layui-nav-child">
+              <dd><a href="#">基本资料</a></dd>
+              <dd><a href="#">安全设置</a></dd>
+            </dl>
+          </li>
+          <li class="layui-nav-item"><a href="">退了</a></li>
+        </ul>
+      </div>
+
+      <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+          <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+          <ul class="layui-nav layui-nav-tree left_menu" lay-filter="test">
+            <li class="layui-nav-item layui-nav-itemed layui-this">
+              <a class="" href="javascript:;">学生管理</a>
+            </li>
+            <li class="layui-nav-item">
+              <a href="javascript:;">聊天室</a>
+            </li>
+            <li class="layui-nav-item"><a href="javascript:;">教学进度</a></li>
+            <li class="layui-nav-item"><a href="javascript:;">留言板</a></li>
+            <li class="layui-nav-item"><a href="javascript:;">邮箱</a></li>
+            <li class="layui-nav-item"><a href="javascript:;">阅览</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="layui-body">
+        <!-- 内容主体区域 -->
+        <div class="content_box" style="padding: 15px;">
+          <!-- 学生管理 -->
+          <div class="box0">
+            <div class="search_box">
+              <label for="search">姓名:</label>
+              <input id="search" type="text" placeholder="搜索" />
+              <button type="button" class="layui-btn">搜索</button>
+            </div>
+            <div class="student_table">
+              <table class="layui-table student_list" lay-filter="demoEvent">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>性别</th>
+                    <th>邮箱</th>
+                    <th>班级</th>
+                    <th>地址</th>
+                    <th>成绩</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div class="table_page">
+              <div id="page"></div>
+            </div>
+          </div>
+          <div class="box1">
+            <p>聊天室</p>
+            <div class="talk_box">
+                <div class="talk_list">
+                  <p>
+                    <span>
+                      <img src="http://pic2.zhimg.com/50/v2-fb824dbb6578831f7b5d92accdae753a_hd.jpg" alt="">
+                    </span>
+                    <span>23232</span>
+                  </p>
+                  <p class="mine">
+                    <span>23232</span>
+                    <span>
+                      <img src="http://pic2.zhimg.com/50/v2-fb824dbb6578831f7b5d92accdae753a_hd.jpg" alt="">
+                    </span>
+                  </p>
+                  <p>
+                    <span>
+                      <img src="http://pic2.zhimg.com/50/v2-fb824dbb6578831f7b5d92accdae753a_hd.jpg" alt="">
+                    </span>
+                    <span>23232</span>
+                  </p>
+                  <p class="mine">
+                    <span>23232</span>
+                    <span>
+                      <img src="http://pic2.zhimg.com/50/v2-fb824dbb6578831f7b5d92accdae753a_hd.jpg" alt="">
+                    </span>
+                  </p>
+                </div>
+                <div class="talk_input">
+                  <textarea placeholder="请输入内容"></textarea>
+                  <button type="button" class="layui-btn">发送</button>
+                </div>
+            </div>
+          </div>
+          <div class="box3">
+            <p>留言板</p>
+            <div class="layui-form-item layui-form-text">
+                <form action="">
+                    <div class="layui-input-block">
+                        <textarea
+                            name="desc"
+                            placeholder="请输入内容"
+                            class="layui-textarea"
+                        ></textarea>
+                        </div>
+                    </div>
+                    <button type="button"  class="layui-btn">提交</button>
+                    <button type="reset" class="layui-btn">清空</button>
+                </form>
+            <ul class="mes_list">
+              <li>
+                <p class="mes_name">胡歌</p>
+                <p class="mes_content">历经打磨，@索尼中国 再献新作品—OLED电视A8F完美诞生。很开心一起参加了A8F的“首映礼”！[鼓掌]正如我们演员对舞台的热爱，索尼对科技与艺术的追求才创造出了让人惊喜的作品。作为A1兄弟款，A8F沿袭了黑科技“屏幕发声技术”和高清画质，色彩的出众表现和高端音质，让人在体验的时候如同身临其境。A8F，这次的“视帝”要颁发给你！ 索尼官网预售： O网页链接 索尼旗舰店预售：</p>
+              </li>
+              <li>
+                <p class="mes_name">胡歌</p>
+                <p class="mes_content">历经打磨，@索尼中国 再献新作品—OLED电视A8F完美诞生。很开心一起参加了A8F的“首映礼”！[鼓掌]正如我们演员对舞台的热爱，索尼对科技与艺术的追求才创造出了让人惊喜的作品。作为A1兄弟款，A8F沿袭了黑科技“屏幕发声技术”和高清画质，色彩的出众表现和高端音质，让人在体验的时候如同身临其境。A8F，这次的“视帝”要颁发给你！ 索尼官网预售： O网页链接 索尼旗舰店预售：</p>
+              </li>
+              <li>
+                <p class="mes_name">胡歌</p>
+                <p class="mes_content">历经打磨，@索尼中国 再献新作品—OLED电视A8F完美诞生。很开心一起参加了A8F的“首映礼”！[鼓掌]正如我们演员对舞台的热爱，索尼对科技与艺术的追求才创造出了让人惊喜的作品。作为A1兄弟款，A8F沿袭了黑科技“屏幕发声技术”和高清画质，色彩的出众表现和高端音质，让人在体验的时候如同身临其境。A8F，这次的“视帝”要颁发给你！ 索尼官网预售： O网页链接 索尼旗舰店预售：</p>
+              </li>
+            </ul>
+          </div>
+          <div class="box6">
+            <p>设置我的资料卡</p>
+            <form class="layui-form" action="">
+              <div class="layui-form-item">
+                <div class="layui-inline">
+                  <label class="layui-form-label">我的角色</label>
+                  <div class="layui-input-inline">
+                    <select name="quiz">
+                      <option value="">请选择问题</option>
+                      <optgroup>
+                        <option value="你的工号">你的工号</option>
+                        <option value="你最喜欢的老师">你最喜欢的老师</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                </div>
+              </div>
+                <div class="layui-form-item">
+                  <div class="layui-inline">
+                    <label class="layui-form-label">用户名</label>
+                    <div class="layui-input-inline">
+                      <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+                </div>
+                <div class="layui-form-item">
+                  <div class="layui-inline">
+                    <label class="layui-form-label">昵称</label>
+                    <div class="layui-input-inline">
+                      <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">单选框</label>
+                <div class="layui-input-block">
+                  <input type="radio" name="sex" value="男" title="男" checked="">
+                  <input type="radio" name="sex" value="女" title="女">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <div class="layui-inline">
+                  <label class="layui-form-label">手机</label>
+                  <div class="layui-input-inline">
+                    <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <div class="layui-inline">
+                  <label class="layui-form-label">邮箱</label>
+                  <div class="layui-input-inline">
+                    <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+            </div>
+              <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">文本域</label>
+                <div class="layui-input-inline">
+                  <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+                </div>
+              </div>
+              <button type="button" class="layui-btn send_btn">保存</button>
+              <button type="reset" class="layui-btn">重置</button>
+            </form>
+          </div>
+          <div class="box7">27</div>
+        </div>
+      </div>
+    </div>
+    <script src="./libs/jquery-3.4.1/jquery-3.4.1.js"></script>
+    <script src="./libs/layui-v2.5.6/layui/layui.all.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+      //JavaScript代码区域
+      layui.use("element", function() {
+        var element = layui.element;
+      });
+
+      layui.use(["laypage", "layer"], function() {
+        var laypage = layui.laypage,
+          layer = layui.layer;
+
+        //不显示首页尾页
+        laypage.render({
+          elem: "page",
+          count: 100,
+          first: false,
+          last: false
+        });
+
+        //测试数据
+        var data = [
+          "北京",
+          "上海",
+          "广州",
+          "深圳",
+          "杭州",
+          "长沙",
+          "合肥",
+          "宁夏",
+          "成都",
+          "西安",
+          "南昌",
+          "上饶",
+          "沈阳",
+          "济南",
+          "厦门",
+          "福州",
+          "九江",
+          "宜春",
+          "赣州",
+          "宁波",
+          "绍兴",
+          "无锡",
+          "苏州",
+          "徐州",
+          "东莞",
+          "佛山",
+          "中山",
+          "成都",
+          "武汉",
+          "青岛",
+          "天津",
+          "重庆",
+          "南京",
+          "九江",
+          "香港",
+          "澳门",
+          "台北"
+        ];
+      });
+    </script>
+  </body>
+</html>

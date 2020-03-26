@@ -11,13 +11,13 @@
     <div class="wrapper">
       <div class="login_box">
         <p>注册</p>
-        <form class="layui-form layui-form-pane" action="">
+        <form class="layui-form layui-form-pane form_data" action="">
           <div class="layui-form-item">
             <label class="layui-form-label">账号</label>
             <div class="layui-input-inline">
               <input
                 type="text"
-                name="username"
+                name="user"
                 lay-verify="required"
                 placeholder="请输入"
                 autocomplete="off"
@@ -30,7 +30,7 @@
             <div class="layui-input-inline">
               <input
                 type="password"
-                name="password"
+                name="psw"
                 placeholder="请输入密码"
                 autocomplete="off"
                 class="layui-input"
@@ -51,11 +51,14 @@
           </div>
         </form>
         <div class="login_btn">
-          <button type="button" class="layui-btn layui-btn-danger">
+          <button type="button" class="layui-btn layui-btn-danger register_btn">
             注册
           </button>
         </div>
       </div>
     </div>
+    <script src="./libs/jquery-3.4.1/jquery-3.4.1.js"></script>
+    <script src="./libs/layui-v2.5.6/layui/layui.all.js"></script>
+    <script src="./js/register.js"></script>
   </body>
 </html>
