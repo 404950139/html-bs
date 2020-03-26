@@ -36,7 +36,7 @@
             <li class="layui-nav-item">
               <a href="javascript:;">聊天室</a>
             </li>
-            <li class="layui-nav-item"><a href="javascript:;">教学进度</a></li>
+            <li class="layui-nav-item"><a href="javascript:;">学生成绩图</a></li>
             <li class="layui-nav-item"><a href="javascript:;">留言板</a></li>
             <li class="layui-nav-item"><a href="javascript:;">邮箱</a></li>
             <li class="layui-nav-item"><a href="javascript:;">阅览</a></li>
@@ -76,39 +76,28 @@
             </div>
           </div>
           <div class="box1">
-            <p>聊天室</p>
-            <div class="talk_box">
-                <div class="talk_list">
-                  <p>
-                    <span>
-                      <img src="http://pic2.zhimg.com/50/v2-fb824dbb6578831f7b5d92accdae753a_hd.jpg" alt="">
-                    </span>
-                    <span>23232</span>
-                  </p>
-                  <p class="mine">
-                    <span>23232</span>
-                    <span>
-                      <img src="http://pic2.zhimg.com/50/v2-fb824dbb6578831f7b5d92accdae753a_hd.jpg" alt="">
-                    </span>
-                  </p>
-                  <p>
-                    <span>
-                      <img src="http://pic2.zhimg.com/50/v2-fb824dbb6578831f7b5d92accdae753a_hd.jpg" alt="">
-                    </span>
-                    <span>23232</span>
-                  </p>
-                  <p class="mine">
-                    <span>23232</span>
-                    <span>
-                      <img src="http://pic2.zhimg.com/50/v2-fb824dbb6578831f7b5d92accdae753a_hd.jpg" alt="">
-                    </span>
-                  </p>
+            <div class="box1_header">
+                <p>阿新机器人</p>
+            </div>
+            <div class="box1_content">
+                <div class="mine">
+                    <div class="avatar"></div>
+                    <div class="text">吃饭了吗</div>
                 </div>
-                <div class="talk_input">
-                  <textarea placeholder="请输入内容"></textarea>
-                  <button type="button" class="layui-btn">发送</button>
+                
+                <div class="robot">
+                    <div class="avatar"></div>
+                    <div class="text">吃了</div>
                 </div>
             </div>
+            <div class="box1_message">
+                <input type="text" class="text-input">
+                <button type="submit" class="sub-input">发送</button>
+            </div>
+          </div>
+          <div class="box2">
+            <div id="main" style="width: 600px;height:400px;"></div>
+            <div id="main1" style="width: 600px;height:400px;"></div>
           </div>
           <div class="box3">
             <p>留言板</p>
@@ -139,6 +128,26 @@
                 <p class="mes_content">历经打磨，@索尼中国 再献新作品—OLED电视A8F完美诞生。很开心一起参加了A8F的“首映礼”！[鼓掌]正如我们演员对舞台的热爱，索尼对科技与艺术的追求才创造出了让人惊喜的作品。作为A1兄弟款，A8F沿袭了黑科技“屏幕发声技术”和高清画质，色彩的出众表现和高端音质，让人在体验的时候如同身临其境。A8F，这次的“视帝”要颁发给你！ 索尼官网预售： O网页链接 索尼旗舰店预售：</p>
               </li>
             </ul>
+          </div>
+          <div class="box4">
+            <form class="layui-form" action="">
+                <div class="layui-form-item">
+                  <div class="layui-inline">
+                    <label class="layui-form-label">收件人</label>
+                    <div class="layui-input-inline">
+                      <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+                </div>
+              <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">文本域</label>
+                <div class="layui-input-inline">
+                  <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+                </div>
+              </div>
+              <button type="button" class="layui-btn send_btn">发送</button>
+              <button type="reset" class="layui-btn">重置</button>
+            </form>
           </div>
           <div class="box6">
             <p>设置我的资料卡</p>
@@ -212,6 +221,7 @@
     </div>
     <script src="./libs/jquery-3.4.1/jquery-3.4.1.js"></script>
     <script src="./libs/layui-v2.5.6/layui/layui.all.js"></script>
+    <script src="https://lib.baomitu.com/echarts/4.6.0/echarts.min.js"></script>
     <script src="./js/index.js"></script>
     <script>
       //JavaScript代码区域
