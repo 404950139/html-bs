@@ -50,10 +50,55 @@
           <!-- 学生管理 -->
           <div class="box0">
             <div class="search_box">
-              <label for="search">姓名:</label>
-              <input id="search" type="text" placeholder="搜索" />
-              <button type="button" class="layui-btn">搜索</button>
+              <form class="layui-form" action="">
+                <div class="layui-form-item">
+                  <div class="layui-inline">
+                    <label class="layui-form-label">姓名：</label>
+                    <div class="layui-input-inline">
+                      <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+                  <div class="layui-inline">
+                    <label class="layui-form-label">年龄：</label>
+                    <div class="layui-input-inline">
+                      <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+                  <div class="layui-inline">
+                    <label class="layui-form-label">性别：</label>
+                    <div class="layui-input-inline">
+                      <select name="modules" lay-verify="required" lay-search="">
+                        <option value="">直接选择或搜索选择</option>
+                        <option value="0">男</option>
+                        <option value="1">女</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="layui-inline">
+                    <label class="layui-form-label">邮箱：</label>
+                    <div class="layui-input-inline">
+                      <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+                  <div class="layui-inline">
+                    <label class="layui-form-label">班级：</label>
+                    <div class="layui-input-inline">
+                      <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+                  <div class="layui-inline in_btn">
+                    <label class="layui-form-label">地址：</label>
+                    <div class="layui-input-inline">
+                      <input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+                  <div class="layui-inline">
+                    <button type="button" class="layui-btn">搜索</button>
+                  </div>
+                </div>
+              </form>
             </div>
+            
             <div class="student_table">
               <table class="layui-table student_list" lay-filter="demoEvent">
                 <thead>
@@ -96,8 +141,71 @@
             </div>
           </div>
           <div class="box2">
-            <div id="main" style="width: 600px;height:400px;"></div>
-            <div id="main1" style="width: 600px;height:400px;"></div>
+            <div class="box2_f">
+              <div class="box2_l">
+                <div class="center_soon">
+                  <p>快捷方式</p>
+                  <div class="center_list">
+                    <div class="center_block">
+                      <div class="center_block_b">
+                        <i class="layui-icon">&#xe6b2;</i> 
+                      </div>
+                      <p>学生成绩查询</p>
+                    </div>
+                    <div class="center_block">
+                      <div class="center_block_b">
+                        <i class="layui-icon">&#xe6b2;</i> 
+                      </div>
+                      <p>学生成绩查询</p>
+                    </div>
+                    <div class="center_block">
+                      <div class="center_block_b">
+                        <i class="layui-icon">&#xe6b2;</i> 
+                      </div>
+                      <p>学生成绩查询</p>
+                    </div>
+                    <div class="center_block">
+                      <div class="center_block_b">
+                        <i class="layui-icon">&#xe6b2;</i> 
+                      </div>
+                      <p>学生成绩查询</p>
+                    </div>
+                    <div class="center_block">
+                      <div class="center_block_b">
+                        <i class="layui-icon">&#xe6b2;</i> 
+                      </div>
+                      <p>学生成绩查询</p>
+                    </div>
+                    <div class="center_block">
+                      <div class="center_block_b">
+                        <i class="layui-icon">&#xe6b2;</i> 
+                      </div>
+                      <p>学生成绩查询</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="pic">
+                  <p>学生数据表</p>
+                  <div id="main" style="width: 600px;height:400px;"></div>
+                  <div id="main1" style="width: 600px;height:400px;"></div>
+                </div>
+              </div>
+              <div class="box2_r">
+                <p>公告栏</p>
+                <ul>
+                  <li>1.公告</li>
+                  <li>1.公告</li>
+                  <li>1.公告</li>
+                  <li>1.公告</li>
+                  <li>1.公告</li>
+                  <li>1.公告</li>
+                  <li>1.公告</li>
+                  <li>1.公告</li>
+                  <li>1.公告</li>
+                  <li>1.公告</li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div class="box3">
             <p>留言板</p>

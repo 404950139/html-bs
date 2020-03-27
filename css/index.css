@@ -12,6 +12,11 @@
   height: 100%;
 }
 
+.layui-body {
+  height: 100%;
+  background-color: #f8f8f8;
+}
+
 .box0,
 .box1,
 .box2,
@@ -30,17 +35,34 @@
 .search_box {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
-.search_box label {
+.search_box .search_block {
+  /* margin-right */
+}
+.search_box .search_block label {
   font-size: 20px;
   margin-right: 20px;
 }
-.search_box input {
+.search_box .search_block input {
   width: 200px;
   height: 38px;
   padding-left: 10px;
   margin-right: 20px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+}
+
+.layui-form-label {
+  white-space: nowrap;
+}
+.layui-inline {
+  margin-right: 100px !important;
+  margin-bottom: 20px !important;
+}
+.in_btn {
+  margin-right: 0 !important;
 }
 
 .student_table {
@@ -97,100 +119,181 @@
 }
 
 .box1_header p {
-  width:100%;
-  height:40px;
-  text-align:center;
-  line-height:40px;
-  background-color:grey;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: grey;
 }
 .box1_content {
-  width:100%;
-  height:calc(100% - 90px);
+  width: 100%;
+  height: calc(100% - 90px);
   overflow-y: scroll;
 }
 .box1_content .mine {
-  width:550px;
-  padding:10px;
-  float:right;
+  width: 550px;
+  padding: 10px;
+  float: right;
 }
 .box1_content .robot {
-  padding:10px;
+  padding: 10px;
 }
 .box1_content .avatar {
-  width:30px;
-  height:30px;
-  border-radius:50%;
-  background-size:100% 100%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-size: 100% 100%;
 }
 .box1_content .mine .avatar {
-  background-image:url('../images/3.png');
-  float:right;
+  background-image: url("../images/3.png");
+  float: right;
 }
 .box1_content .robot .avatar {
-  background-image:url('../images/dog1.jpg');
-  display:inline-block;
+  background-image: url("../images/dog1.jpg");
+  display: inline-block;
   vertical-align: middle;
 }
 .box1_content .text {
-  max-width:250px;
-  border:1px solid #ddd;
-  padding:10px;
-  border-radius:10px;
-  line-height:30px;
-  position:relative;
+  max-width: 250px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  line-height: 30px;
+  position: relative;
 }
 .box1_content .mine .text {
-  background-color:greenyellow;
-  margin-right:10px;
-  float:right;
+  background-color: greenyellow;
+  margin-right: 10px;
+  float: right;
 }
 .box1_content .mine .text::after {
-  content:'';
-  width:0;
-  height:0;
-  border:10px solid transparent;
-  border-left-color:greenyellow;
-  position:absolute;
-  right:-20px;
-  top:5px;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left-color: greenyellow;
+  position: absolute;
+  right: -20px;
+  top: 5px;
 }
 .box1_content .robot .text {
-  background-color:#fff;
-  margin-left:10px;
-  display:inline-block;
+  background-color: #fff;
+  margin-left: 10px;
+  display: inline-block;
   vertical-align: middle;
 }
 .box1_content .robot .text::before {
-  content:'';
-  width:0;
-  height:0;
-  display:inline-block;
-  border:10px solid transparent;
-  border-right-color:#fff;
-  position:absolute;
-  left:-20px;
-  top:10px;
+  content: "";
+  width: 0;
+  height: 0;
+  display: inline-block;
+  border: 10px solid transparent;
+  border-right-color: #fff;
+  position: absolute;
+  left: -20px;
+  top: 10px;
 }
 .box1_message {
-  width:100%;
-  height:50px;
-  background-color:#ddd;
-  line-height:50px;
-  text-align:center;
+  width: 100%;
+  height: 50px;
+  background-color: #ddd;
+  line-height: 50px;
+  text-align: center;
 }
 .box1_message .text-input {
-  width:500px;
-  height:30px;
-  font-size:16px;
-  display:inline-block;
-  outline:none;
-  border:none;
+  width: 500px;
+  height: 30px;
+  font-size: 16px;
+  display: inline-block;
+  outline: none;
+  border: none;
 }
 .box1_message .sub-input {
-  font-size:16px;
-  padding:3px 10px;
-  margin:0 5px;
-  background-color:#ccc;
-  outline:none;
-  border:none;
+  font-size: 16px;
+  padding: 3px 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  outline: none;
+  border: none;
+}
+
+.box2 .box2_f {
+  display: flex;
+  justify-content: space-between;
+}
+.center_soon {
+  width: 1000px;
+  height: 400px;
+  background-color: white;
+  border-radius: 5px;
+}
+.center_soon > p {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  font-size: 20px;
+  border-bottom: 1px solid #f8f8f8;
+}
+.center_list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.center_list .center_block {
+  margin-top: 30px;
+  cursor: pointer;
+}
+.center_list .center_block .center_block_b {
+  width: 300px;
+  height: 100px;
+  background-color: #f8f8f8;
+  text-align: center;
+  line-height: 100px;
+}
+.center_list .center_block .center_block_b i {
+  font-size: 45px;
+}
+.center_list .center_block > p {
+  text-align: center;
+  margin-top: 10px;
+}
+.pic {
+  width: 1000px;
+  margin-top: 20px;
+  background-color: white;
+  padding: 0 30px 80px 30px;
+}
+.pic > p {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  font-size: 20px;
+  border-bottom: 1px solid #f8f8f8;
+}
+.pic > div {
+  margin: 30px auto 0;
+  box-sizing: border-box;
+}
+
+.box2_r {
+  width: 650px;
+  background-color: white;
+}
+.box2_r > p {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  font-size: 20px;
+  border-bottom: 1px solid #f8f8f8;
+}
+.box2_r ul li {
+  width: 100%;
+  height: 50px;
+  padding-left: 30px;
+  font-size: 18px;
+  line-height: 50px;
+  border-bottom: 1px solid #f8f8f8;
 }

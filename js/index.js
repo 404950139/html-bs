@@ -248,7 +248,7 @@
 
     myChart1.setOption(option1);
 
-    $(".box2").addClass("show");
+    $(".box0").addClass("show");
     myAjax("../student.json", "get", "", function(res) {
       var arr = res;
       for (var i = 0; i < arr.length; i++) {
